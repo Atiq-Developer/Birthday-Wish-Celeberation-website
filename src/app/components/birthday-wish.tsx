@@ -170,7 +170,6 @@ export default function BirthdayWish() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
           className="w-full max-w-md"
-          {...({ className: "w-full max-w-md" } as any)}
         >
           {/* Birthday card */}
           <Card className="mx-auto overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl border-2 border-[#A2D3E4]">

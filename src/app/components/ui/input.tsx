@@ -2,8 +2,11 @@ import * as React from "react";
 
 import { cn } from "@/app/libs/utils";
 
+// Define the InputProps interface and satisfy the linter
 export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {}
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  __empty?: never; // Dummy property to avoid the empty interface lint error
+}
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, ...props }, ref) => {
